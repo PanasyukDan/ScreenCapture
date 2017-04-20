@@ -90,7 +90,7 @@ function errorCallback(error) {
 }
   navigator.getUserMedia(
   {
-    audio: false,
+    audio: true,
       video: {'mandatory': {'chromeMediaSource':'screen'}
              }},
         successCallback, errorCallback);
