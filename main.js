@@ -88,7 +88,7 @@ if (!isSecureOrigin) {
 function errorCallback(error) {
   console.log('navigator.getUserMedia error: ', error);
 }
-  navigator.getUserMedia(
+  navigator.webkitGetUserMedia(
   {
     audio: true,
       video: {'mandatory': {'chromeMediaSource':'screen'}
