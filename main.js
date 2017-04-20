@@ -92,8 +92,8 @@ function errorCallback(error) {
   {
     audio: false,
       video: {'mandatory': {'chromeMediaSource':'screen'}
-             },
-        successCallback, errorCallback});
+             }},
+        successCallback, errorCallback);
 
 
 
