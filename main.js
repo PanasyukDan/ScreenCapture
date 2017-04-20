@@ -88,13 +88,14 @@ if (!isSecureOrigin) {
   const errorCallback = (err) => {
     // We don't have access to the API console.log(err)
   };
-  
-  navigator.getUserMedia({
+
+  navigator.getUserMedia(
+  {
     audio: false,
       video: {'mandatory': {'chromeMediaSource':'screen'}
              },
-        successCallback, errorCallback);
-  })
+        successCallback, errorCallback});
+
 
 
 function errorCallback(error) {
