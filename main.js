@@ -85,10 +85,9 @@ if (!isSecureOrigin) {
     recorder.start(10); // collect 10ms chunks of data
   };
 
-  const errorCallback = (err) => {
-    // We don't have access to the API console.log(err)
-  };
-
+function errorCallback(error) {
+  console.log('navigator.getUserMedia error: ', error);
+}
   navigator.getUserMedia(
   {
     audio: false,
@@ -98,9 +97,7 @@ if (!isSecureOrigin) {
 
 
 
-function errorCallback(error) {
-  console.log('navigator.getUserMedia error: ', error);
-}
+
 
 // navigator.mediaDevices.getUserMedia(constraints)
 // .then(function(stream) {
